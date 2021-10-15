@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disney</title>
+  <script src="https://kit.fontawesome.com/61f85a641d.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/index.min.css">
+  <link rel="stylesheet" type="text/css" href="/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/slick-theme.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+    <a href="index.html" class="logo">
+      <img src="/images/disney-logo.svg" class="main-logo-svg" alt="Disney Logo">
+    </a>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="#" class="nav-links">tv</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">movies</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">store</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">games</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">video</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">win</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">holidays</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">disneylife</a>
+      </li>
+    </ul>
+    <a href="#" class="nav-btn">
+      <i class="far fa-user-circle fa-lg user-icon"></i>
+      login / register
+    </a>
+  </nav>
+
+  <section class="slider-container">
+    <div id="slider-hero" class="slider-hero">
+      <div class="hero-img-container">
+          <img class="hero-img" src="images/starwars.jpg" />
+          <div class="overlay">
+            <img class="star-wars-logo" src="/images/star-wars-logo.svg" alt="Star Wars">
+            <h1 class="overlay-header">Available Now to Rent or Buy</h1>
+            <a href="#" class="purchase-btn">purchase</a>
+          </div>
+      </div>
+      <div class="hero-img-container">
+          <img class="hero-img" src="images/starwars.jpg" />
+          <div class="overlay">
+            <img class="star-wars-logo" src="/images/star-wars-logo.svg" alt="Star Wars">
+            <h3 class="overlay-header">Available Now to Rent or Buy</h3>
+            <a href="#" class="purchase-btn">purchase</a>
+          </div>
+      </div>
+      <div class="hero-img-container">
+          <img class="hero-img" src="images/starwars.jpg"/>
+          <div class="overlay">
+            <img class="star-wars-logo" src="/images/star-wars-logo.svg" alt="Star Wars">
+            <h3 class="overlay-header">Available Now to Rent or Buy</h3>
+            <a href="#" class="purchase-btn">purchase</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="update-container">
+      <div class="covid-update">
+        <h1 class="update-header">Covid-19 Update</h1>
+        <p class="update-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum quas velit. Excepturi corporis eius provident placeat ullam ipsum repudiandae? Voluptatibus rerum doloremque provident iusto doloribus eos! Culpa, voluptatum laudantium.
+        Expedita deleniti exercitationem necessitatibus velit corporis sequi cumque laudantium modi beatae dolorem, iure ipsum at odit eligendi provident et, ducimus illum. Quibusdam dolorum rerum hic nam et quas expedita incidunt?
+        </p>
+      </div>
+  </section>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/slick.min.js"></script>
+  <source src="app.js">
+  <script>
+    // JQuery code for slick carouselle
+    $(document).ready(function(){
+      $('.slider-hero').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+        infinite: true,
+        fade: true,
+        speed: 500,
+        cssEase: 'linear',
+        autoplaySpeed: 3000,
+        prevArrow: false,
+        nextArrow: false
+      });
+    });
+  </script>
+</body>
+</html>

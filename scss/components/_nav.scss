@@ -1,0 +1,48 @@
+// Navbar styling
+
+.navbar {
+  height: 80px;
+  background: #000;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+// make the navigation a block element when expanded from toggle.
+.active {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  // Hide the navbar toggle when the page is 768px or larger.
+  .navbar-toggle {
+    display: none;
+  }
+  .main-nav {
+    display: flex;
+    position: absolute;
+    height: 14px;
+    left: 14.07%;
+    right: 50.33%;
+    top: calc(50% - 14px/2);
+    margin-top: 0;
+  }
+  .main-nav li {
+    padding-right: 8%;
+  }
+}
