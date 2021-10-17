@@ -1,20 +1,24 @@
 // Navbar styling
 
 .navbar {
-  height: 80px;
+  height: 50px;
   background: #000;
 }
 
+.navbar-toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  font-size: 1.2em;
+}
+
 .main-nav {
-  list-style-type: none;
   display: none;
+  list-style: none;
+  padding-left: 0;
 }
 
 .nav-links {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
   text-decoration: none;
 }
 
@@ -32,17 +36,5 @@
   // Hide the navbar toggle when the page is 768px or larger.
   .navbar-toggle {
     display: none;
-  }
-  .main-nav {
-    display: flex;
-    position: absolute;
-    height: 14px;
-    left: 14.07%;
-    right: 50.33%;
-    top: calc(50% - 14px/2);
-    margin-top: 0;
-  }
-  .main-nav li {
-    padding-right: 8%;
   }
 }

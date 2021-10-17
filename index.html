@@ -8,17 +8,25 @@
   <script src="https://kit.fontawesome.com/61f85a641d.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/index.min.css">
+  <link rel="stylesheet" href="/css/foundation.min.css">
   <link rel="stylesheet" type="text/css" href="/slick.css"/>
   <link rel="stylesheet" type="text/css" href="/slick-theme.css"/>
 </head>
 <body>
-  <nav class="navbar">
-    <span class="navbar-toggle" id="js-navbar-toggle">
-      <i class="fas fa-bars"></i>
-    </span>
-    <a href="index.html" class="logo">
-      <img src="/images/disney-logo.svg" class="main-logo-svg" alt="Disney Logo">
-    </a>
+  <nav class="navbar grid-container fluid">
+    <div class="grid-x">
+      <div class="cell small-4 toggle-container">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars toggle-icon"></i>
+        </span>
+      </div>
+      <div class="logo-container cell small-5">
+        <a href="index.html" class="logo">
+          <div class="disney-logo"></div>
+        </a>
+      </div>
+    </div>
+    
     <ul class="main-nav" id="js-menu">
       <li>
         <a href="#" class="nav-links">tv</a>
@@ -46,17 +54,19 @@
       </li>
     </ul>
     <a href="#" class="nav-btn">
-      <i class="far fa-user-circle fa-lg user-icon"></i>
-      login / register
+      <div class="user-icon">
+        login / register
+      </div>
     </a>
   </nav>
 
+  <!-- Slick JS slider
   <section class="slider-container">
     <div id="slider-hero" class="slider-hero">
       <div class="hero-img-container">
           <img class="hero-img" src="images/starwars.jpg" />
           <div class="overlay">
-            <img class="star-wars-logo" src="/images/star-wars-logo.svg" alt="Star Wars">
+            <img class="star-wars-logo" src="/images/star-wars-logo.png" alt="Star Wars">
             <h1 class="overlay-header">Available Now to Rent or Buy</h1>
             <a href="#" class="purchase-btn">purchase</a>
           </div>
@@ -64,7 +74,7 @@
       <div class="hero-img-container">
           <img class="hero-img" src="images/starwars.jpg" />
           <div class="overlay">
-            <img class="star-wars-logo" src="/images/star-wars-logo.svg" alt="Star Wars">
+            <img class="star-wars-logo" src="/images/star-wars-logo.png" alt="Star Wars">
             <h3 class="overlay-header">Available Now to Rent or Buy</h3>
             <a href="#" class="purchase-btn">purchase</a>
           </div>
@@ -72,7 +82,7 @@
       <div class="hero-img-container">
           <img class="hero-img" src="images/starwars.jpg"/>
           <div class="overlay">
-            <img class="star-wars-logo" src="/images/star-wars-logo.svg" alt="Star Wars">
+            <img class="star-wars-logo" src="/images/star-wars-logo.png" alt="Star Wars">
             <h3 class="overlay-header">Available Now to Rent or Buy</h3>
             <a href="#" class="purchase-btn">purchase</a>
           </div>
@@ -80,6 +90,7 @@
     </div>
   </section>
 
+  Update section
   <section class="update-container">
       <div class="covid-update">
         <h1 class="update-header">Covid-19 Update</h1>
@@ -89,27 +100,69 @@
       </div>
   </section>
 
+  Film releases carouselle
+  <section class="film-release-container">
+    <div class="new-releases">
+      <div class="releases-header">
+        <h2>New releases this month</h2>
+        <a href="#" class="see-all-btn">See All  <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+      Carouselle
+      <div class="releases-carouselle">
+        <div class="movie-img-container">
+          <img id="movie-img" src="images/carousel-img2.jpg" alt="Beauty and the Beast">
+          <p>Beauty and the Beast</p>
+        </div>
+        <div class="movie-img-container">
+          <img src="images/carousel-img3.jpg" alt="Alice in Wonderland">
+          <p>Alice in Wonderland</p>
+        </div>
+        <div class="movie-img-container">
+          <img src="images/carousel-img4.jpg" alt="The Lion King">
+          <p>The Lion King</p>
+        </div>
+        <div class="movie-img-container">
+          <img src="images/carousel-img1.jpg" alt="Incredibles 2">
+          <p>Incredibles 2</p>
+        </div>
+        <div class="movie-img-container">
+          <img src="images/carousel-img5.jpg" alt="Up">
+          <p>Up</p>
+        </div>
+      </div>
+  </section> -->
+
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="/slick.min.js"></script>
-  <source src="app.js">
+  <script src="app.js"></script>
   <script>
     // JQuery code for slick carouselle
-    $(document).ready(function(){
-      $('.slider-hero').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        autoplay: true,
-        infinite: true,
-        fade: true,
-        speed: 500,
-        cssEase: 'linear',
-        autoplaySpeed: 3000,
-        prevArrow: false,
-        nextArrow: false
-      });
-    });
+    // $(document).ready(function(){
+    //   $('.slider-hero').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     dots: true,
+    //     autoplay: true,
+    //     infinite: true,
+    //     fade: true,
+    //     speed: 500,
+    //     cssEase: 'linear',
+    //     autoplaySpeed: 3000,
+    //     prevArrow: false,
+    //     nextArrow: false
+    //   });
+    // });
+
+    // Jquery code for the new releases carouselle
+    // $('.releases-carouselle').slick({
+    //   infinite: true,
+    //   slidesToShow: 6,
+    //   slidesToScroll: 3,
+    //   autoplay: true,
+    //   autoplaySpeed: 2000
+    // });
   </script>
 </body>
 </html>
