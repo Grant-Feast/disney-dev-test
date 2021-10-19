@@ -53,6 +53,7 @@ body {
 .hero-img {
   background: url('/images/starwars.jpg');
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   filter: brightness(40%);
 }
@@ -75,6 +76,13 @@ body {
   .nav-links {
     font-size: 12px;
   }
+  .slider-container {
+    padding-top: 5%;
+  }
+  .hero-img {
+    background-position: 40% 50%;
+    height: 500px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -87,5 +95,8 @@ body {
     background-repeat: no-repeat;
     padding-left: 2em;
     height: 30px;
+  }
+  .hero-img {
+    height: 600px;
   }
 }

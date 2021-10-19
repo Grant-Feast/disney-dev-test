@@ -3,6 +3,12 @@
 .star-wars-logo {
   width: 240px;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 16%;
+}
+
+@media (min-width: 768px) {
+  .star-wars-logo {
+    left: auto;
+  }
 }
