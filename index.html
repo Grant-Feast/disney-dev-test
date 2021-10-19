@@ -13,46 +13,55 @@
   <link rel="stylesheet" type="text/css" href="/slick-theme.css"/>
 </head>
 <body>
-  <nav class="navbar grid-container fluid">
+  <nav class="navbar grid-container full">
     <div class="grid-x">
+      <!-- Toggle for smaller screens -->
       <div class="cell small-4 toggle-container">
         <span class="navbar-toggle" id="js-navbar-toggle">
           <i class="fas fa-bars toggle-icon"></i>
         </span>
       </div>
-      <div class="logo-container cell small-5">
+      <!-- Logo -->
+      <div class="logo-container cell small-5 medium-4">
         <a href="index.html" class="logo">
           <div class="disney-logo"></div>
         </a>
       </div>
+      <div class="list-container cell medium-5">
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="#" class="nav-links">tv</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">movies</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">store</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">games</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">video</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">win</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">holidays</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">disneylife</a>
+          </li>
+          <a href="#" class="user-btn">
+            <div class="user-logo">
+              login / register
+            </div>
+          </a>
+        </ul>
+      </div>
     </div>
-    
-    <ul class="main-nav" id="js-menu">
-      <li>
-        <a href="#" class="nav-links">tv</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links">movies</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links">store</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links">games</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links">video</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links">win</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links">holidays</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links">disneylife</a>
-      </li>
-    </ul>
+
     <a href="#" class="nav-btn">
       <div class="user-icon">
         login / register
@@ -60,38 +69,41 @@
     </a>
   </nav>
 
-  <!-- Slick JS slider
+  <!-- Slick JS slider -->
   <section class="slider-container">
     <div id="slider-hero" class="slider-hero">
       <div class="hero-img-container">
-          <img class="hero-img" src="images/starwars.jpg" />
-          <div class="overlay">
-            <img class="star-wars-logo" src="/images/star-wars-logo.png" alt="Star Wars">
-            <h1 class="overlay-header">Available Now to Rent or Buy</h1>
-            <a href="#" class="purchase-btn">purchase</a>
+          <div class="hero-img">
+            <div class="overlay">
+              <img class="star-wars-logo" src="/images/star-wars-logo.png" alt="Star Wars">
+              <h2 class="overlay-header">Available Now to Rent or Buy</h2>
+              <a href="#" class="purchase-btn">purchase</a>
+            </div>
           </div>
       </div>
       <div class="hero-img-container">
-          <img class="hero-img" src="images/starwars.jpg" />
+        <div class="hero-img">
           <div class="overlay">
             <img class="star-wars-logo" src="/images/star-wars-logo.png" alt="Star Wars">
-            <h3 class="overlay-header">Available Now to Rent or Buy</h3>
+            <h2 class="overlay-header">Available Now to Rent or Buy</h2>
             <a href="#" class="purchase-btn">purchase</a>
           </div>
+        </div>
       </div>
       <div class="hero-img-container">
-          <img class="hero-img" src="images/starwars.jpg"/>
+        <div class="hero-img">
           <div class="overlay">
             <img class="star-wars-logo" src="/images/star-wars-logo.png" alt="Star Wars">
-            <h3 class="overlay-header">Available Now to Rent or Buy</h3>
+            <h2 class="overlay-header">Available Now to Rent or Buy</h2>
             <a href="#" class="purchase-btn">purchase</a>
           </div>
+        </div>
       </div>
     </div>
   </section>
 
-  Update section
-  <section class="update-container">
+  <!-- Update section -->
+  <!-- <section class="update-container">
       <div class="covid-update">
         <h1 class="update-header">Covid-19 Update</h1>
         <p class="update-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum quas velit. Excepturi corporis eius provident placeat ullam ipsum repudiandae? Voluptatibus rerum doloremque provident iusto doloribus eos! Culpa, voluptatum laudantium.
@@ -131,7 +143,7 @@
           <p>Up</p>
         </div>
       </div>
-  </section> -->
+  </section> --> 
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -139,21 +151,21 @@
   <script src="app.js"></script>
   <script>
     // JQuery code for slick carouselle
-    // $(document).ready(function(){
-    //   $('.slider-hero').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     dots: true,
-    //     autoplay: true,
-    //     infinite: true,
-    //     fade: true,
-    //     speed: 500,
-    //     cssEase: 'linear',
-    //     autoplaySpeed: 3000,
-    //     prevArrow: false,
-    //     nextArrow: false
-    //   });
-    // });
+    $(document).ready(function(){
+      $('.slider-hero').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+        infinite: true,
+        fade: true,
+        speed: 500,
+        cssEase: 'linear',
+        autoplaySpeed: 3000,
+        prevArrow: false,
+        nextArrow: false
+      });
+    });
 
     // Jquery code for the new releases carouselle
     // $('.releases-carouselle').slick({

@@ -4,3 +4,44 @@
   display: none;
 }
 
+.purchase-btn {
+  bottom: 2%;
+  position: absolute;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: .3em 1em;
+}
+
+@media (min-width: 768px) {
+  .user-btn {
+    display: none;
+  }
+  .nav-btn {
+    display: inline;
+    position: absolute;
+    right: 2%;
+    top: 35%;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    background: #FF704B;
+    padding: .6em;
+    border-radius: 20px;
+  }
+  .navbar {
+    height: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-btn {
+    height: 32px;
+  }
+}
+

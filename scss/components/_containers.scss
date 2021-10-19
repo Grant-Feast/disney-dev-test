@@ -11,17 +11,81 @@ body {
 .toggle-container {
   position: absolute;
   right: 0%;
-  top: 2.5%;
+  top: 4%;
 }
 
 .logo-container {
   height: 50px;
+  position: absolute;
+  top: 2%;
+  left: 5%;
 }
 
 .disney-logo {
   background: url('/images/disney-logo.png');
-  filter: brightness(0) invert(1);
+  // use filter to change the color the disney png
+  filter: brightness(0) invert(1); //brightness changes the whole logo to black then invert turns everything white.
   height: 50px;
   background-repeat: no-repeat;
 }
 
+.list-container {
+  background: #000;
+  margin-top: 3em;
+  z-index: 1;
+}
+
+.user-logo {
+  background: #FF704B;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: .4em;
+}
+
+// top slider styles
+
+.hero-img-container {
+  height: 100vh;
+}
+
+.hero-img {
+  background: url('/images/starwars.jpg');
+  background-position: center;
+  height: 100vh;
+  filter: brightness(40%);
+}
+
+.overlay {
+  justify-content: center;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .list-container {
+    margin: 0;
+    left: 20%;
+    position: absolute;
+  }
+  .logo-container {
+    left: 2%;
+    top: 18%;
+  }
+  .nav-links {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .list-container {
+    left: 16%;
+  }
+  .user-icon {
+    background: url('/images/user.png');
+    filter: brightness(0) invert(1);
+    background-repeat: no-repeat;
+    padding-left: 2em;
+    height: 30px;
+  }
+}
