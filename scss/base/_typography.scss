@@ -6,12 +6,12 @@
 
 .update-container h1 {
   font-weight: 400;
-  font-size: 32px;
 }
 
 .update-container p {
   color: #c4c4c4;
-  font-size: 18px;
+  font-size: 15px;
+  line-height: 1.8;
 }
 
 .releases-header h2 {
@@ -32,4 +32,29 @@
   bottom: 28%;
   color: #fff;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .overlay-header {
+    bottom: 45%;
+  }
+  .update-header {
+    font-size: 28px;
+  }
+  .update-info {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1024px) {
+  .overlay-header {
+    bottom: 48%;
+  }
+  .update-header {
+    font-size: 32px;
+  }
+  .update-info {
+    font-size: 18px;
+  }
 }

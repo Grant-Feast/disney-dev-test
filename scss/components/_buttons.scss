@@ -37,11 +37,17 @@
   .navbar {
     height: 80px;
   }
+  .purchase-btn {
+    bottom: 38%;
+  }
 }
 
 @media (min-width: 1024px) {
   .nav-btn {
     height: 32px;
+  }
+  .purchase-btn {
+    bottom: 40%;
   }
 }
 

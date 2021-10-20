@@ -47,7 +47,7 @@ body {
 // top slider styles
 
 .hero-img-container {
-  height: 100vh;
+  height: 500px;
 }
 
 .hero-img {
@@ -61,6 +61,13 @@ body {
 .overlay {
   justify-content: center;
   display: flex;
+}
+
+// Update section
+
+.covid-update {
+  text-align: center;
+  padding: 0 1.4em;
 }
 
 @media (min-width: 768px) {
@@ -83,6 +90,9 @@ body {
     background-position: 40% 50%;
     height: 500px;
   }
+  .covid-update {
+    padding: 0 1.6em;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -97,6 +107,11 @@ body {
     height: 30px;
   }
   .hero-img {
-    height: 600px;
+    height: 500px;
+  }
+  .covid-update {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
