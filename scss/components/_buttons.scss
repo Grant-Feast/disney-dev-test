@@ -16,6 +16,27 @@
   padding: .3em 1em;
 }
 
+.see-all-btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: .2em .7em;
+  border-radius: 20px;
+}
+
+// Trailer section styles
+
+.trailer-link {
+  background: #000;
+  padding: .5em 1.2em;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
 @media (min-width: 768px) {
   .user-btn {
     display: none;
@@ -38,7 +59,7 @@
     height: 80px;
   }
   .purchase-btn {
-    bottom: 38%;
+    bottom: 15%;
   }
 }
 
@@ -47,7 +68,17 @@
     height: 32px;
   }
   .purchase-btn {
-    bottom: 40%;
+    bottom: 20%;
+  }
+  .see-all-btn {
+    font-size: 15px;
+    width: 150px;
+    text-align: center;
+    letter-spacing: 1px;
+    right: 10%;
+  }
+  .trailer-link {
+    font-size: 18px;
   }
 }
 

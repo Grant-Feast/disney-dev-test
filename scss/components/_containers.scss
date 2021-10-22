@@ -70,6 +70,43 @@ body {
   padding: 0 1.4em;
 }
 
+// Carouselle styles
+
+.film-release-container {
+  background: #000;
+  padding-left: 3em;
+  overflow: hidden;
+}
+
+.releases-header {
+  position: relative;
+}
+
+.releases-carouselle {
+  height: 250px;
+}
+
+.movie-img-container {
+  width: 150px !important;
+  height: 200px;
+  margin-right: .5em;
+}
+
+// Trailer section styles
+
+.trailer-info-container {
+  padding: 0 2.5em;
+}
+
+// Image row styles
+.img-row-container {
+  margin-top: 2em;
+}
+
+.block-img {
+  margin-bottom: .6em;
+}
+
 @media (min-width: 768px) {
   .list-container {
     margin: 0;
@@ -93,6 +130,15 @@ body {
   .covid-update {
     padding: 0 1.6em;
   }
+  .trailer-container {
+    height: 750px;
+  }
+  .trailer-info-container {
+    padding: 10%;
+  }
+  .img-row-container {
+    margin-top: 18%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -109,9 +155,29 @@ body {
   .hero-img {
     height: 500px;
   }
+  .film-release-container {
+    height: 594px;
+    padding-left: 8%;
+  }
+  .update-container {
+    padding-bottom: 2em;
+  }
   .covid-update {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .movie-img-container {
+    height: 429px;
+    width: 283px !important;
+  }
+  .trailer-info-container {
+    padding: 12% 10%;
+  }
+  .img-row-container {
+    margin-top: 5%;
+  }
+  .block-img {
+    padding: 4px;
   }
 }

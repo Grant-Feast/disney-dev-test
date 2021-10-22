@@ -8,9 +8,9 @@
   <script src="https://kit.fontawesome.com/61f85a641d.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/foundation.min.css">
+  <link rel="stylesheet" href="/css/index.min.css">
   <link rel="stylesheet" type="text/css" href="/slick.css"/>
   <link rel="stylesheet" type="text/css" href="/slick-theme.css"/>
-  <link rel="stylesheet" href="/css/index.min.css">
 </head>
 <body>
   <nav class="navbar grid-container full">
@@ -113,14 +113,14 @@
   </section>
 
   <!-- Film releases carouselle -->
-  <!-- <section class="film-release-container">
+  <section class="film-release-container">
     <div class="new-releases">
       <div class="releases-header">
         <h2>New releases this month</h2>
         <a href="#" class="see-all-btn">See All  <i class="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
-      Carouselle
+      <!-- Carouselle -->
       <div class="releases-carouselle">
         <div class="movie-img-container">
           <img id="movie-img" src="images/carousel-img2.jpg" alt="Beauty and the Beast">
@@ -142,8 +142,57 @@
           <img src="images/carousel-img5.jpg" alt="Up">
           <p>Up</p>
         </div>
+        <div class="movie-img-container">
+          <img id="movie-img" src="images/carousel-img2.jpg" alt="Beauty and the Beast">
+          <p>Beauty and the Beast</p>
+        </div>
+        <div class="movie-img-container">
+          <img src="images/carousel-img3.jpg" alt="Alice in Wonderland">
+          <p>Alice in Wonderland</p>
+        </div>
+        <div class="movie-img-container">
+          <img src="images/carousel-img4.jpg" alt="The Lion King">
+          <p>The Lion King</p>
+        </div>
       </div>
-  </section> --> 
+  </section> 
+
+  <!-- Star wars trailer section -->
+  <section class="trailer-container grid-container full">
+    <div class="grid-x">
+      <div class="cell large-6 trailer-img-container">
+        <img src="images/movie-row.jpg" alt="Star wars charachter" class="trailer-img">
+      </div>
+      <div class="cell large-6 trailer-info-container">
+        <div class="trailer-info">
+          <h2 class="trailer-header">new star wars trailer</h2>
+          <p class="trailer-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis voluptates maiores similique veniam, exercitationem obcaecati voluptate necessitatibus blanditiis facilis, doloribus eveniet eius incidunt excepturi dolorem dignissimos a nobis nemo.
+          Dolorum consequuntur ab consequatur facere repudiandae ullam, cupiditate laudantium officia quod praesentium, odio nesciunt alias. Labore ea fugiat beatae, enim ex blanditiis magni. Numquam sequi, saepe doloremque culpa temporibus incidunt.</p>
+        </div>
+        <div class="trailer-btn">
+          <a href="#" class="trailer-link">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Images row -->
+  <section class="img-row-container grid-container">
+    <div class="grid-x">
+      <div class="cell medium-3 block-img">
+        <img src="images/block-img1.jpg" alt="Walt and Mickey" class="row-img">
+      </div>
+      <div class="cell medium-3 block-img">
+        <img src="images/block-img2.jpg" alt="Disney artist" class="row-img">
+      </div>
+      <div class="cell medium-3 block-img">
+        <img src="images/block-img3.jpg" alt="Frozen charachters" class="row-img">
+      </div>
+      <div class="cell medium-3 block-img">
+        <img src="images/block-img4.jpg" alt="Michrophone" class="row-img">
+      </div>
+    </div>
+  </section>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -168,13 +217,14 @@
     });
 
     // Jquery code for the new releases carouselle
-    // $('.releases-carouselle').slick({
-    //   infinite: true,
-    //   slidesToShow: 6,
-    //   slidesToScroll: 3,
-    //   autoplay: true,
-    //   autoplaySpeed: 2000
-    // });
+   
+      $('.releases-carouselle').slick({
+        infinite: true,
+        slidesToShow: 4.8,
+        slidesToScroll: 8,
+        rows: 1
+      });
+   
   </script>
 </body>
 </html>

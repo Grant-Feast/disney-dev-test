@@ -7,14 +7,29 @@
   left: 16%;
 }
 
+// Carousel styles
+
+.movie-img-container img {
+  border-radius: 6px;
+}
+
 @media (min-width: 768px) {
   .star-wars-logo {
     left: auto;
+    bottom: 15%;
+  }
+  .trailer-img {
+    padding-left: 10%;
+    height: 500px;
   }
 }
 
 @media (min-width: 1024px) {
   .star-wars-logo {
     bottom: 40%;
+  }
+  .trailer-img {
+    padding-left: 0;
+    height: 750px;
   }
 }

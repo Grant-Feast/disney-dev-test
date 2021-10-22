@@ -15,14 +15,14 @@
 }
 
 .releases-header h2 {
+ color: #fff;
+ font-size: 18px;
+}
+
+.movie-img-container p {
   color: #fff;
-  font-size: 28px;
-  font-weight: 400;
-  position: absolute;
-  width: 710px;
-  height: 39px;
-  left: 158px;
-  top: 1027px;
+  margin: 0;
+  font-size: 12px;
 }
 
 // top slider styles
@@ -34,9 +34,22 @@
   font-weight: 400;
 }
 
+// Trailer section styles
+
+.trailer-header {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.trailer-content {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #c4c4c4;
+}
+
 @media (min-width: 768px) {
   .overlay-header {
-    bottom: 45%;
+    bottom: 30%;
   }
   .update-header {
     font-size: 28px;
@@ -45,16 +58,29 @@
     font-size: 16px;
     line-height: 1.5;
   }
+  .movie-img-container p {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1024px) {
   .overlay-header {
-    bottom: 48%;
+    bottom: 35%;
   }
   .update-header {
     font-size: 32px;
   }
   .update-info {
+    font-size: 18px;
+  }
+  .releases-header h2 {
+    font-weight: 400;
+    font-size: 28px;
+  }
+  .trailer-header {
+    font-size: 32px;
+  }
+  .trailer-content {
     font-size: 18px;
   }
 }
